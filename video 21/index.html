@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* The specificity of this selector is 1 */
+        h1 {
+            color: rgb(22, 23, 22);
+        }
+
+        /* The specificity of this selector is 10 */
+        .yellow {
+            color: rgb(182, 226, 7);
+        }
+
+        [data-x=a] {
+            color: rgb(241, 77, 7);
+        }
+
+        /* The specificity of this selector is 10  calculation is 10 + 1 = 11  + */
+        h1.cred {
+            color: pink;
+        }
+
+        .cpurple {
+            color: rgb(11, 220, 147);
+        }
+
+        /* The specificity of this selector is 10 */
+        /* attribute selector */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">Css specificity</h1>
+    </div>
+</body>
+
+</html>
