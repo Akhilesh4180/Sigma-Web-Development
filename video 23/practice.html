@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display Property Example</title>
+    <style>
+        /* Block Level Element */
+        .block {
+            display: block;
+            width: 200px;
+            height: 50px;
+            background-color: #3498db;
+            margin-bottom: 10px;
+        }
+
+        /* Inline Level Element */
+        .inline {
+            display: inline;
+            width: 200px;
+            height: 50px;
+            background-color: #e74c3c;
+            margin-right: 10px;
+        }
+
+        /* Inline-Block Element */
+        .inline-block {
+            display: inline-block;
+            width: 200px;
+            height: 50px;
+            background-color: #2ecc71;
+            margin-right: 10px;
+        }
+
+        /* Flex Container */
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+
+        .flex-item {
+            width: 50px;
+            height: 50px;
+            background-color: #f39c12;
+        }
+
+        /* Grid Container */
+        .grid-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .grid-item {
+            width: 50px;
+            height: 50px;
+            background-color: #9b59b6;
+        }
+
+        /* Hidden Element */
+        .hidden-element {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="block"></div>
+    <span class="inline"></span>
+    <div class="inline-block"></div>
+
+    <div class="flex-container">
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+        <div class="flex-item"></div>
+    </div>
+
+    <div class="grid-container">
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+    </div>
+
+    <div class="hidden-element">
+        This is a hidden element.
+    </div>
+</body>
+</html>
