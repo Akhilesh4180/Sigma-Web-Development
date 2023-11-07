@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #73ed4d;
+            padding: 10px 20px;
+            color: #151313;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: black;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 10px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        h3 {
+            text-align: center;
+            font-weight: 100;
+        }
+
+        .button p {
+
+            margin: 10px;
+            padding: 10px;
+            background-color: lightblue;
+        }
+
+        p {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <nav class="navbar">
+        <div class="logo">
+            <img width="60px" src="logo_pic.png" alt="">
+            <p>an Idera,Inc.Company</p>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="#">Resources</a></li>
+            <li><a href="#">About Us</a></li>
+        </ul>
+    </nav>
+    <h1>Download <strong>UltraEdit</strong> for Windows</h1>
+    <h3>
+        Download and try UltraEdit before you buy it! This download includes the full Windows <br> version of the text
+        editor.
+    </h3>
+
+    <div class="button">
+        <p> Download Mac or Windows</p>
+    </div>
+</body>
+
+</html>
