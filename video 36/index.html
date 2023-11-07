@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercise – 4 solution- CSS MultiColor Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Baloo+2&family=Poppins&display=swap');
+    </style>
+    <style>
+        body{
+            background-color: var(--secondary-color);
+        }
+        /* :root{
+            --primary-color:#19e319;
+            --text-color:black;
+            --secondary-color:#acf7ac;
+        } */
+        :root{
+            --primary-color:#d6f27d;
+            --text-color:rgba(0, 0, 0, 0.735);
+            --secondary-color:rgb(242, 247, 172);
+        }
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+
+        }
+
+        ul li {
+            list-style: none;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+            padding: 12px 0;
+        }
+
+        ul li {
+            display: inline;
+            padding: 23px;
+            font-weight: bolder;
+            color: var(--text-color);
+        }
+        ul li a {
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="">Services</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+
+</html>
