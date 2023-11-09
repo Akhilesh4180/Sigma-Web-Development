@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform MasterClass</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box {
+            height: 150px;
+            width: 150px;
+            background-color: beige;
+            border: 2px solid black;
+            transform: rotate(0.125turn);
+            /* transform-origin: -0% -0%; */
+            /* transform: rotateZ(9deg); */
+            /* transform: scale(1.6); */
+            /* transform: scaleX(1.6); */
+            /* transform: scale3d(1.2); */
+
+            /* note : skew Z axis me apply nhi hota hai */
+            /* transform: skewY(5deg); */
+            /* transform: translateX(34px); */
+            /* transform: translateX(100%); */
+            /* transform: translateY(100%) skew(50deg) translateX(-50%); */
+            /* transform; */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 50px;
+        }
+
+        .container {
+            width: 100vw;
+            height: 80vh;
+            border: 5px solid rgb(236, 11, 11);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+
+</html>
