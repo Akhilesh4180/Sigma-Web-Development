@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+    .container{
+        background-color: greenyellow;
+        height: 80vh;
+        width: 30vw;
+    }
+    .box{
+       
+     width:65px;
+     height: 55px;
+     /* animation: akhileshkaAnimation;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: cubic-bezier(0.31, -0.05, 0, 1);
+     animation-delay: 3s;
+     animation-direction: reverse;
+     animation-play-state: paused; */
+     /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+     animation: akhileshkaAnimation 3s ease-in-out 3s 1 backwards ,
+                akhileshkaAnimation2 3s ease-in-out 3s 1  ;
+    }
+
+    @keyframes akhileshkaAnimation {
+        from{
+            background-color: red;
+        }
+        to{
+            background-color: pink;
+            transform: translate(1000px);
+        }
+    }
+    @keyframes akhileshkaAnimation2 {
+        0%{
+            transform: rotate(100deg);
+        }
+        20%{
+            transform: rotate(200deg);
+
+        }
+        40%{
+            transform: rotate(220deg);
+
+        }
+        60%{
+            transform: rotate(250deg);
+
+        }
+        80%{
+            transform: rotate(300deg);
+
+        }
+        100%{
+            transform: rotate(350deg);
+
+        }
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Box
+        </div>
+    </div>
+</body>
+</html>
